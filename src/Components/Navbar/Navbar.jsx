@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav class="navbar navbar-expand-lg bg-transperante">
       <div class="container-fluid my-2">
-        <span class="navbar-brand px-3 h1 text-light fs-3">
+        <span class="navbar-brand px-3 h1 text-light fs-3 gym" onClick={() =>{navigate(`/`)}}>
           G<span class="h1 text-danger">Y</span>M
         </span>
         <button
